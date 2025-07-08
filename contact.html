@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | GetSolace</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="header__brand">
+          <div class="header__logo font-secondary">
+            <img src="img/logo.svg" alt="logo">
+          </div>
+        </div>
+        <ul class="header__nav" id="navMenu" aria-hidden="true">
+            <li class="header__nav-item"><a href="index.html" class="font-grey font-size-medium">Home</a></li>
+            <li class="header__nav-item"><a href="about.html" class="font-grey font-size-medium">About Us</a></li>
+            <li class="header__nav-item"><a href="contact.html" class="font-grey font-size-medium">Contact Us</a></li>
+            <li class="header__nav-item"><a href="terms.html" class="font-grey font-size-medium">Terms and Conditions</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="contact" class="features">
+        <article class="features__card blog__post">
+          <h2>Contact Us</h2>
+          <h3>We'd Love to Hear from You</h3>
+          <p>
+            Have a question, suggestion, or want to share your story? Reach out to the GetSolace team—we’re here to listen and help.
+          </p>
+          <h3>Contact Form</h3>
+          <form action="mailto:getsolace.india@gmail.com" method="post" enctype="text/plain" class="contact-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <button type="submit" class="background-secondary font-light fw-bold">Send Message</button>
+          </form>
+          <h3>Other Ways to Connect</h3>
+          <ul>
+            <li>Email: <a href="mailto:your@email.com">getsolace.india@gmail.com</a></li>
+            <li>Instagram: <span>@getsolace.india</span></li>
+          </ul>
+          <p>
+            We aim to respond to all inquiries within 48 hours.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__content">
+          <div class="footer__socials">
+            <div class="header__brand">
+              <div class="header__logo font-secondary">
+                <img src="img/logo.svg" alt="logo">
+              </div>
+            </div>
+            <p class="font-size-small font-grey">
+              <small>&copy; 2025 GetSolace</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
