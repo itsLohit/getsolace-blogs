@@ -21,9 +21,10 @@ img {
 }
 
 body {
-  max-width: clamp(320px, 90%, 1000px);
-  margin: auto;
+  max-width: 100vw;
+  margin: 0;
   overflow-x: hidden;
+  padding: 0;
 }
 
 ul {
@@ -851,9 +852,11 @@ footer a:hover {
   padding: 3rem 2rem;
   border-radius: 16px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  max-width: 900px;
+  max-width: 1400px;   /* Try 1200px, 1400px, or even 1600px for extra width */
+  width: 95vw;         /* Ensures it stretches wide on all screens */
   margin: 2rem auto;
 }
+
 
 #blog h2 {
   font-size: 2.5rem;
@@ -871,6 +874,7 @@ footer a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 2rem;
+  max-width: 100%;
 }
 
 .features__card.blog__post:hover {
@@ -923,3 +927,12 @@ footer a:hover {
     font-size: 1rem;
   }
 }
+
+@media (min-width: 1600px) {
+  #blog {
+    max-width: 1600px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
